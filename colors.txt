@@ -1,0 +1,10 @@
+Main background -- #112D4E
+
+Main Box -- 3F72AF
+
+buttons--27496D
+
+refresh--DFD3D3
+
+X--00ADB5
+O--00ADB5
