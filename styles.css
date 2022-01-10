@@ -5,7 +5,7 @@ body {
 p {
   font-size: 2.1rem;
   font-family: "Inconsolata", monospace;
-  color: #FFFDA2;
+  color: #fffda2;
 }
 
 h1 {
@@ -23,7 +23,7 @@ h1 {
   position: relative;
   left: 290px;
   bottom: 75px;
-  color: #D9D7F1;
+  color: #d9d7f1;
 }
 
 .refresh:hover {
@@ -43,21 +43,19 @@ h1 {
   /* background-color: red; */
 }
 .main-box {
-    
   width: 350px;
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
-  
-  border-radius: 15px;
 
+  border-radius: 15px;
 }
 .main-buttons {
-color: #1A374D;
+  color: #1a374d;
   width: 100px;
   height: 100px;
-  background-color: #676FA3;
+  background-color: #676fa3;
   border-radius: 8px;
   border-style: none;
   font-weight: bolder;
