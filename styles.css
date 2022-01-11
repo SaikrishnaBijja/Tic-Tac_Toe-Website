@@ -12,6 +12,7 @@ h1 {
   text-align: center;
   margin: 40px 0 50px 0;
   font-family: "Montserrat", sans-serif;
+  color: #CCD1E4;
 }
 
 .refresh {
@@ -62,6 +63,10 @@ h1 {
 }
 .main-buttons:hover {
   background-color: #475162;
+}
+
+.x-image{
+  width: 50px;
 }
 
 @media only screen and (min-width: 600px) {
