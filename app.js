@@ -1,27 +1,28 @@
-document.querySelector(".refresh").addEventListener("click", function () {
+const positions = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+function play() {
+  const computerNum = Math.floor(Math.random() * 9);
+  if (positions[computerNum] === 0) {
+    num = computerNum + 1;
+    $("#" + num).html('<img class="x-image" src="images/circumference.png"/>');
+    positions[computerNum] = 1;
+  } else {
+    play();
+  }
+}
+
+$(".refresh").click(function () {
   for (var i = 0; i <= 8; i++) {
-    document.querySelectorAll(".main-buttons")[i].innerHTML = "";
+    $(".main-buttons")[i].innerHTML = "";
+    positions[i] = 0;
   }
 });
 
-// sleep(500).then(() => {
-//   document.querySelector("#three").innerHTML =
-//     '<img class="x-image" src="images/circumference.png" alt="" />';
-// });
-
-for (var i = 0; i <= 8; i++) {
-  document
-    .querySelectorAll(".main-buttons")
-    [i].addEventListener("click", function () {
-      const clike = this.id;
-      //   alert(this.id)
-      document.getElementById(this.id).innerHTML =
-        '<img class="x-image" src="images/close.png" alt="" />';
-    });
-}
-
-// document.querySelectorAll(".refresh")[0].addEventListener("click", function () {
-
-//   //
-//   alert("hello");
-// });
+$(".main-buttons").click(function () {
+  var check_position = Number(this.id) - 1;
+  if (positions[check_position] === 0) {
+    $("#" + this.id).html('<img class="x-image" src="images/close.png" alt="" />');
+    positions[check_position] = 1;
+    play();
+  }
+});
