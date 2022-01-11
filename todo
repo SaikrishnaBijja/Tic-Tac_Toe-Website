@@ -1,0 +1,13 @@
+1) Let Computer player decide where its places the coin
+2) check for win or lose
+3) Prompt the results
+
+1 > 2 4 5
+2 > 1 3 5
+3 > 2 6 5
+4 > 1 7 5
+5 > 1,2,3,4,6,7,8,9
+6 > 3 9 5
+7 > 4 8 5
+8 > 7 9 5
+9 > 8 6 5
