@@ -3,7 +3,7 @@ const positions = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 // to verify the game still on
 var is_on = true;
 // to keep track of score
-var score = 1;
+var score = 0;
 // these image were inserted when player clicks a position on board
 const xImage = '<img class="image" src="images/close.png"/>';
 const circleImage = '<img class="image" src="images/circumference.png"/>';
@@ -24,7 +24,7 @@ function refresh() {
   }
   $(".result").html("");
   is_on = true;
-  score++;
+  
 }
 // this function checks for win or lose or draw
 function checkResult() {
@@ -40,8 +40,9 @@ function checkResult() {
     }
     // checking for  computer won the game
     else if (checkWin(1)) {
+      score = score + 1;
       $(".result").html("You Won").css("color", "#95CD41");
-      $(".score").html("Score: " + String(score));
+      $(".score").html("Score: " + String(score/2));
       is_on = false;
     }
   } else {
