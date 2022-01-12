@@ -1,6 +1,6 @@
 # Tic-Tac_Toe-Website
 
-- Live Site URL: (https://saikrishnabijja.github.io/Tic-Tac_Toe-Website/)
+- Live Site URL: (https://saikrishnabijja.github.io/tic-tac-toe-website/)
 
 ### Built with
 
