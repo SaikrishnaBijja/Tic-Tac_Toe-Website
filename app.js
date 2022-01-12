@@ -42,7 +42,7 @@ function checkResult() {
     else if (checkWin(1)) {
       score = score + 1;
       $(".result").html("You Won").css("color", "#95CD41");
-      $(".score").html("Score: " + String(score/2));
+      $(".score").html("Score: " + String(Math.floor(score/2)));
       is_on = false;
     }
   } else {
